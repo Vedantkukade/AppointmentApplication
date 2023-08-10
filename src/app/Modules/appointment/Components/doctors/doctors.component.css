@@ -1,0 +1,81 @@
+.parent{
+    margin: 50px;
+}
+
+.card{
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    background-color:white;
+    border: none;
+    padding: 10px;
+}
+
+.card:hover{
+    box-shadow: #7575FF 0px 10px 35px;
+    cursor: pointer;
+}
+.parentcard{
+    gap: 40px;
+    margin-left: 40px;
+}
+
+.image img{
+    border-radius: 50%;
+}
+.data li{
+    list-style-type: none;
+    
+}
+.data{
+    margin-left: 15px;
+    line-height: 24px;
+}
+.name{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.edu{
+    font-size: 14px;
+    color: grey;
+}
+
+.edu1{
+    margin-top: 7px;
+}
+
+.x{
+    font-size: 13px;
+    color: grey;
+}
+
+.vertical{
+    border-right: 1px solid rgba(128, 128, 128, 0.645);
+    
+}
+
+.ver{
+    display: flex;
+    gap: 20px;
+}
+
+.addbut{
+    width: 200px;
+    height: 56px;
+}
+
+.head{
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-color:#7575FF ;
+}
+
+.butsec{
+    padding-right: 40px;
+}
+.mdc-text-field--filled:not(.mdc-text-field--disabled){
+    border:2px solid #7575FF ;
+   
+}
+
+

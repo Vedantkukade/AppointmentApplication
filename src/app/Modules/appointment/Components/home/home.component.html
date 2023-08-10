@@ -1,0 +1,187 @@
+<div class="container">
+    <div class="row parent">
+        <div class=" col-md-8 left">
+            <div class="row one">
+                <div class="col-md-5 box bt">
+                    <h3>Total Appointments - Today</h3>
+                    <div class="img">
+                        <img src="../../../../../assets/images/Today_Widget.svg" alt="">
+                        <div class="total">
+                            3
+                        </div>
+                    </div>
+
+                </div>
+                <div class=" col-md-5 box bt">
+                    <h3>Total Appointments - This Week</h3>
+                    <div class="img">
+                        <img src="../../../../../assets/images/ThisWeek_Widget.svg" alt="">
+                        <div class="total">
+                            4
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-md-11 two bt">
+                <div class="title">
+                    <h4 class="gridtitle">Today's Appointments</h4>
+                    <h4 class="underline"><a routerLink="/schedule">Book Appointments</a></h4>
+                </div>
+                <div class="tab scroll">
+                    <table class="table table-bordered table-light table-striped">
+                        <thead class="thead bg-dark">
+                            <tr>
+                                <th scope="col">Time</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Doctor Name</th>
+                                <th scope="col">Symptoms</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10:30 AM</td>
+                                <td>Milka</td>
+                                <td>Edwards</td>
+                                <td>Swelling and Eatching</td>
+                            </tr>
+                            <tr>
+                                <td>12:00 PM</td>
+                                <td>Vedant</td>
+                                <td>Edison</td>
+                                <td>Frequent Squinting</td>
+                            </tr>
+                            <tr>
+                                <td>02:00 PM</td>
+                                <td>Max</td>
+                                <td>Nolan</td>
+                                <td>Sweating and Brusing</td>
+                            </tr>
+                            <tr>
+                                <td>05:00 PM</td>
+                                <td>Dom</td>
+                                <td>Cristopher</td>
+                                <td>Feeling of lighttheads</td>
+                            </tr>
+
+                            <tr>
+                                <td>05:00 PM</td>
+                                <td>Dom</td>
+                                <td>Cristopher</td>
+                                <td>Feeling of lighttheads</td>
+                            </tr>
+                            <tr>
+                                <td>05:00 PM</td>
+                                <td>Dom</td>
+                                <td>Cristopher</td>
+                                <td>Feeling of lighttheads</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class=" col-md-11 py-2 px-2 three mt-4 bt">
+                <h4 class="gridtitle">Consultation</h4>
+                <div class="chart">
+                    <highcharts-chart [Highcharts]="Highcharts" [options]="patients"
+                    style="width:100%; height:300px; display:block;">
+
+                </highcharts-chart>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 right">
+            <div class="rone py-2 px-2 bt">
+                <h3 class="gridtitle">Recent Activities</h3>
+                <div class="activity">
+                    <ul>
+                        <li class="adark">Added New Appointment</li>
+                        <li>- Joseph for consultation on 7/3/2023,</li>
+                        <li>4:00:00 PM with Dr.Molli Cobb</li>
+                        <li class="atime">5 mins ago</li>
+                    </ul>
+                    <ul>
+                        <li class="adark">Added New Patient</li>
+                        <li>- James Richard for Fever and cold</li>
+                        <!-- <li>4:00:00 PM with Dr.Molli Cobb</li> -->
+                        <li class="atime">5 mins ago</li>
+                    </ul>
+                    <ul>
+                        <li class="adark">Added New Appointment</li>
+                        <li>- Laura for General Checkup on 7/3/2023,</li>
+                        <li>4:00:00 PM with Dr.Molli Cobb</li>
+                        <li class="atime">5 mins ago</li>
+                    </ul>
+                    <ul>
+                        <li class="adark">Added New Doctor</li>
+                        <li>- Dr.Johnson James, Cardiologist</li>
+                        <!-- <li>4:00:00 PM with Dr.Molli Cobb</li> -->
+                        <li class="atime">5 mins ago</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rtwo py-2 px-2 mt-5 bt">
+                <div class="title">
+                    <h3 class="gridtitle">Doctor's Availability</h3>
+                    <h3 class="underline"><a routerLink="">View All</a></h3>
+                </div>
+                <div class="doclist">
+                    <div class="doc">
+                        <div class="docimage">
+                            <img src="../../../../../assets/images/NemboLukni.png" alt="" width="50px" height="50px">
+                        </div>
+                        <div class="docname">
+                            <li>Nembo Lukeni</li>
+                            <li class="atime">General Medicine</li>
+                        </div>
+                       
+                    </div>
+                    <hr>
+                    <div class="doc">
+                        <div class="docimage">
+                            <img src="../../../../../assets/images/MollieCobb.png" alt="" width="50px" height="50px">
+                        </div>
+                        <div class="docname">
+                            <li>Mollie Cobb</li>
+                            <li class="atime">Neurology</li>
+                        </div>
+                       
+                    </div>
+                    <hr>
+                    <div class="doc">
+                        <div class="docimage">
+                            <img src="../../../../../assets/images/YaraBarros.png" alt="" width="50px" height="50px">
+                        </div>
+                        <div class="docname">
+                            <li>Yara Barros</li>
+                            <li class="atime">General Medicine</li>
+                        </div>
+                       
+                    </div>
+                    <hr>
+                    <div class="doc">
+                        <div class="docimage">
+                            <img src="../../../../../assets/images/PaulWalker.png" alt="" width="50px" height="50px">
+                        </div>
+                        <div class="docname">
+                            <li>Paul Walker</li>
+                            <li class="atime">Dermatology</li>
+                        </div>
+                       
+                    </div>
+                    <hr>
+                    <div class="doc">
+                        <div class="docimage">
+                            <img src="../../../../../assets/images/AmeliaEdwards.png" alt="" width="50px" height="50px">
+                        </div>
+                        <div class="docname">
+                            <li>Amelia Edwards</li>
+                            <li class="atime">Orthopedics</li>
+                        </div>
+                       
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

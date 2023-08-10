@@ -1,0 +1,116 @@
+<h2 mat-dialog-title class="text-white">Update Doctor Data</h2>
+<mat-dialog-content class="mat-typography">
+    <div class="parent">
+        <div class="formcontainer">
+            <form [formGroup]="docform" class="form" (ngSubmit)="update()">
+
+                <div class="name x">
+
+                    <label>Doctor Name</label>
+                    <input type="text" formControlName="name">
+
+                </div>
+                <div class="gender x">
+                    <mat-radio-group aria-label="Gender" formControlName="gender">
+                        <label>Gender</label>
+                        <mat-radio-button value="Female">Female</mat-radio-button>
+                        <mat-radio-button value="Male">Male</mat-radio-button>
+                        <mat-radio-button value="Other">Other</mat-radio-button>
+                    </mat-radio-group>
+                </div>
+                <div class="number x">
+
+                    <label>Mobile Number</label>
+                    <input type="text" formControlName="number">
+
+                </div>
+                <div class="email x">
+
+                    <label>Email</label>
+                    <input type="email" formControlName="email">
+
+                </div>
+                <div class="inputs">
+                    <div class="left x">
+
+                        <label>
+                            Department
+                        </label>
+                        <select formControlName="dept" class="y">
+                            <option value="All">All</option>
+                            <option value="General Medicine">General Medicine</option>
+                            <option value="Neurology">Neurology</option>
+                            <option value="Dermatology">Dermatology</option>
+                            <option value="Orthopedics">Orthopedics</option>
+                            <option value="Cardiology">Cardiology</option>
+                            <option value="Dialectology">Dialectology</option>
+                        </select>
+                       
+
+
+                    </div>
+                    <div class="right x">
+
+                        <label>Education</label>
+                        <input type="text" formControlName="edu">
+                      
+
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div class="left x">
+
+                        <label>
+                            Experience
+                        </label>
+                      
+                        <select formControlName="exp" class="y">
+                            <option value="1+ years">1+ years</option>
+                            <option value="2+ years">2+ years</option>
+                            <option value="5+ years">5+ years</option>
+                            <option value="10+ years">10+ years</option>
+                            <option value="15+ years">15+ years</option>
+                            <option value="20+ years">20+ years</option>
+                           
+                        </select>
+
+
+                    </div>
+                    <div class="right x">
+
+                        <label>Designation</label>
+                        <input type="text" formControlName="desi">
+
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div class="left x">
+
+                        <label>
+                            Duty Time
+                        </label>
+                        
+                        <select formControlName="duty" class="y">
+                            <option value="8:00 AM TO 5:00 PM">8:00 AM TO 5:00 PM</option>
+                            <option value="10:00 AM TO 7:00 PM">10:00 AM TO 7:00 PM</option>
+                            <option value="12:00 PM TO 9:00 PM">12:00 PM TO 9:00 PM</option>
+                         
+                        </select>
+
+
+                    </div>
+                    <div class="right x profile">
+
+                        <label>Profile Photo</label>
+                        <input type="file" formControlName="photo" (change)="selectURL($event)" accept=".png,.jpg,.jpeg" #fileInput>
+
+                    </div>
+                </div>
+                <mat-dialog-actions align="end">
+                    <button mat-button mat-dialog-close>Cancel</button>
+                    <button mat-raised-button color="primary" [mat-dialog-close]="true" cdkFocusInitial type="submit">Update</button>
+                </mat-dialog-actions>
+            </form>
+        </div>
+    </div>
+</mat-dialog-content>

@@ -1,0 +1,105 @@
+.container{
+    padding: 80px;
+}
+.head h2{
+
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #7575FF;
+
+}
+.head h2:hover span{
+    transform: rotate(180deg);
+    cursor: pointer;
+    top: 20%;
+}
+.head h2 span{
+    top: 21%;
+    right: 94%;
+    transition: transform 1s ease;
+    position: absolute;
+}
+
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }100%{
+        transform: rotate(360deg);
+    }
+}
+.alldata{
+    margin: 40px 50px 0px 200px;
+}
+
+.imgdat{
+    display: flex;
+
+    gap: 40px;
+    line-height: 24px;
+
+}
+.imgdat li{
+    list-style-type: none;
+}
+.port{
+    display: flex;
+    gap: 120px;
+}
+.img img{
+    border-radius: 50%;
+}
+
+.x{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.tit{
+    color:grey;
+    font-size: 13px;
+}
+.titx{
+  
+    font-size: 13px;
+}
+
+.break2{
+    display: flex;
+    padding: 15px 0px 0px 25px;
+    gap: 40px;
+    font-size: 15px;
+}
+.break2 li{
+    list-style-type: none;
+    line-height: 25px;
+}
+.break p{
+    font-size: 20px;
+    color: grey;
+}
+
+.y{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.red{
+    color: red;
+}
+
+.right{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+
+
+

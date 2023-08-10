@@ -1,0 +1,78 @@
+<div class="parent">
+    <div class="child">
+        <div class="sidebar">
+            <mat-drawer-container class="example-container">
+                <!-- <mat-drawer mode="side" opened>Drawer content</mat-drawer> -->
+                <!-- <mat-drawer-content>Main content</mat-drawer-content> -->
+                <div class="main">
+                    <div class="admin">
+                        <img src="../../../../../assets/images/Admin.png" alt="Admin" width="90px" height="90px">
+                    </div>
+                    <div class="admintext">
+                        <h3>Jane Doe</h3>
+                        <p class="txt">Admin</p>
+                        
+                    </div>
+                    <div class="hr"></div>
+                </div>
+
+                <div class="components">
+                    <div class="comp" routerLink="home" routerLinkActive="active">
+                        <div class="icon-dashboard"></div>
+                        <div class="x" >Dashboard</div>
+                    </div>
+                    <div class="comp" routerLink="schedule" [routerLinkActive]="['active']">
+                        <div class="icon-schedule"></div>
+                        <div class="x" >  Schedule</div>
+                    </div>
+                    <div class="comp" routerLink="doctors" [routerLinkActive]="['active']">
+                        <div class="icon-doctors"></div>
+                        <div class="x">Doctors</div>
+                    </div>
+                    <div class="comp" routerLink="patients" [routerLinkActive]="['active']">
+                        <div class="icon-patients"></div>
+                        <div class="x">Patients</div>
+                    </div>
+                    <div class="comp" routerLink="preference" [routerLinkActive]="['active']">
+                        <div class="icon-preference"></div>
+                        <div class="x">Preference</div>
+                    </div>
+                    <div class="comp" routerLink="about" [routerLinkActive]="['active']">
+                        <div class="icon-about"></div>
+                        <div class="x">About</div>
+                    </div>
+                </div>
+            </mat-drawer-container>
+        </div>
+        <div class="content">
+            <div class="header">
+                <p>
+
+                <p>
+                    <mat-toolbar color="primary">
+                        <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+                            <mat-icon>library_books</mat-icon>
+                        </button> -->
+                        <div class="left">
+                            <span class="clinic-image icon-logo"></span><span>APPOINTMENT PLANNER</span>
+                            <span class="example-spacer"></span>
+                        </div>
+
+                        <div class="right">
+                            <div class="dash"></div>
+                            <mat-icon class="directions">directions</mat-icon>
+                            <span class="log">LogOut</span>
+
+                            <button mat-icon-button class="example-icon"
+                                aria-label="Example icon-button with share icon">
+                                <img src="../../../../../assets/images/github-9-xxl.png" alt="">
+                            </button>
+                        </div>
+
+                    </mat-toolbar>
+                </p>
+            </div>
+            <div class="data"><router-outlet></router-outlet></div>
+        </div>
+    </div>
+</div>

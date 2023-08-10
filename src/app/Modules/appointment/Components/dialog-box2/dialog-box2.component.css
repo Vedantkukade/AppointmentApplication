@@ -1,0 +1,40 @@
+h2{
+    width: 100%;
+    background-color: #7575ff;
+}
+
+.formcontainer label{
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
+
+}
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.x{
+  display: flex;
+  flex-direction: column;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+ select{
+    width: 140px;
+    height: 27.4px;
+}
+
+.profile input{
+    width: 185.6px;
+    height: 30px;
+}
+
+

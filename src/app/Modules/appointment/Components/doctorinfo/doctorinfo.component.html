@@ -1,0 +1,81 @@
+<div class="container">
+    <div class="parent">
+        <div class="row head">
+            <h2 routerLink="/doctors"><span><mat-icon>arrow_forward_ios</mat-icon></span>Doctors Data</h2>
+        </div>
+        <div class="row ">
+            <div class="right"><button mat-raised-button color="warn" (click)="delete(data.id)">DELETE</button>
+                <button mat-raised-button color="primary" (click)="openDialog()">EDIT</button>
+            </div>
+            
+        </div>
+        <div class="alldata" >
+            <div class="row port">
+                <div class="col-md-5 imgdat">
+                    <div class="img">
+                        <img [src]="data.photo" width="80px" height="80px" alt="">
+                    </div>
+                    <div class="docdata">
+                        <div class="title">
+                            <li class="x">Dr. {{data.name | titlecase}}</li>
+                            <li>{{data.edu | uppercase}}</li>
+                            <li>{{data.desi | titlecase}}</li>
+                        </div>
+                        <div class="spec mt-2">
+                            <li class="tit">
+                                Specialisation
+                            </li>
+                            <li>{{data.dept | titlecase}}</li>
+                        </div>
+                        <div class="exp mt-2">
+                            <li class="tit">Experience</li>
+                            <li>{{data.exp }}</li>
+                        </div>
+                        <div class="avail mt-2">
+                            <li class="tit">Availability</li>
+                            <li>Sun&nbsp;Mon&nbsp;Tue&nbsp;Wed&nbsp;Thu&nbsp;Fri<P class="titx"> {{data.duty}}</P></li>
+                        </div>
+                        <div class="mob mt-2">
+                            <li class="tit">Mobile</li>
+                            <li>{{data.number}}</li>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="break">
+                        <p>Break Hours: +</p>
+                        <div class="break2">
+                            <div><li>Sunday</li>
+                                <li>Monday</li>
+                                <li>Tuesday</li>
+                                <li>Wednesday</li>
+                                <li>Thursday</li>
+                                <li>Friday</li>
+                                <li>Saturday</li>
+                            </div>
+                            <div class="y">
+                                <li> 8:00 AM - 5:00 PM</li>
+                                <li class="red"> TIME OFF</li>
+                                <li> 8:00 AM - 5:00 PM</li>
+                                <li> 8:00 AM - 5:00 PM</li>
+                                <li> 8:00 AM - 5:00 PM</li>
+                                <li> 8:00 AM - 5:00 PM</li>
+                                <li class="red">TIME OFF</li>
+                            </div>
+                        </div>
+                       
+                        
+                        <!-- <li><div>Sunday</div><div class="y"> 8:00 AM - 5:00 PM</div></li>
+                        <li><div>Monday</div><div class="y"> TIME OFF</div></li>
+                        <li><div>Tuesday</div><div class="y"> 8:00 AM - 5:00 PM</div></li>
+                        <li><div>Wednesday</div><div class="y"> 8:00 AM - 5:00 PM</div></li>
+                        <li><div>Thursday</div><div class="y"> 8:00 AM - 5:00 PM</div></li>
+                        <li><div>Friday</div><div class="y"> 8:00 AM - 5:00 PM</div></li>
+                        <li><div>Saturday</div><div class="y">TIME OFF</div></li> -->
+                    </div>
+                </div>
+        </div>
+        
+        </div>
+    </div>
+</div>

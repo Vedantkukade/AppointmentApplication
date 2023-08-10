@@ -1,0 +1,90 @@
+<div class="container py-4 px-4 ">
+    <div class="parent">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="head">Doctors List</h2>
+            </div>
+        </div>
+        <div class="row justify-content-end mb-4 butsec">
+            <div class="col-2 me-5 ">
+                <mat-form-field>
+                    <mat-label>Specialisation</mat-label>
+                    <mat-select>
+                        <mat-option value="All">All</mat-option>
+                        <mat-option value="General Medicine">General Medicine</mat-option>
+                        <mat-option value="Neurology">Neurology</mat-option>
+                        <mat-option value="Dermatology">Dermatology</mat-option>
+                        <mat-option value="Orthopedics">Orthopedics</mat-option>
+                        <mat-option value="Cardiology">Cardiology</mat-option>
+                        <mat-option value="Dialectology">Dialectology</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-2 ms-2"><button mat-raised-button color='primary' (click)="openDialog()" class="addbut">Add
+                    Doctor</button></div>
+        </div>
+
+        <div class="row parentcard">
+            <!-- <div class="col-sm-5 card" *ngFor="let x of doclist1" routerLink="/doctorinfo" (click)="getid1(x.id)">
+                <div class="row">
+                    <div class="col-2 mt-2 image">
+                        <img src="{{x.photo}}" alt="" width="70px" height="70px">
+                    </div>
+                    <div class="col-8 data">
+                        <li class="name">
+                            {{ x. name }}
+                        </li>
+                        <li class="edu">{{ x.edu}}</li>
+                        <li class="row edu1">
+                            <div class="col-5 ver">
+                                <div>
+                                    <li class="x">Designation</li>
+                                    <li>{{x.desi }}</li>
+                                 </div>
+
+                                <div class="vertical"></div>
+                            </div>
+
+                            <div class="col-5 ">
+                                    <li class="x">Experince</li>
+                                    <li>{{x.exp}}</li>
+                            </div>
+                        </li>
+
+                    </div>
+                </div>
+
+            </div> -->
+    <div class="col-sm-5 card" *ngFor="let y of doclist2" (click)="getid2(y.id)" routerLink="/doctorinfo">
+        <div class="row">
+            <div class="col-2 mt-2 image">
+                <img src="{{y.photo}}" alt="" width="70px" height="70px">
+            </div>
+            <div class="col-8 data">
+                <li class="name">
+                    Dr.&nbsp;{{y.name | titlecase}}
+                </li>
+                <li class="edu">{{y.edu | uppercase }}</li>
+                <li class="row edu1">
+                    <div class="col-5 ver">
+                        <div>
+                <li class="x">Designation</li>
+                <li>{{y.desi | titlecase}}</li>
+            </div>
+
+            <div class="vertical"></div>
+        </div>
+
+        <div class="col-5 ">
+            <li class="x">Experince</li>
+            <li>{{y.exp}}</li>
+        </div>
+        </li>
+
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
